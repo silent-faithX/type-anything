@@ -47,14 +47,13 @@ nav button {
     border-radius: 6px;
     color: #fff;
     cursor: pointer;
-    font-style: italic;
-    background-color: #d6f1697f;
+    background-color: #748f14da;
     font-family: 'Gilroy', sans-serif;
     transition: background 0.2s;
 }
 
 nav button:hover {
-    background-color: #d7fb43ae;
+    background-color: #637616ae;
 }
 
 /* Main Heading */
@@ -66,7 +65,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    letter-spacing: -0.05em;
+    letter-spacing: -2px;
     text-align: center;
     color: #918d8d;
     padding: 0 2vw;
