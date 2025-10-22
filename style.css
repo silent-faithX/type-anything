@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -83,3 +90,4 @@ h1 {
     box-shadow: 0 0 6px #fafbfb45;
     font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
+
