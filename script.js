@@ -32,8 +32,21 @@ function reload() {
 
 // Virtual keyborad method on mobile
 function vkeyboard() {
+  // Ensure the hidden input exists
+  let input = document.getElementById("hiddenInput");
+  if (!input) {
+    input = document.createElement("input");
+    input.type = "text";
+    input.id = "hiddenInput";
+    input.style.position = "absolute";
+    input.style.opacity = "0";
+    input.style.height = "0";
+    input.style.width = "0";
+    input.style.zIndex = "-1";
+    document.body.appendChild(input);
+  }
+
   document.body.addEventListener("click", () => {
-    const input = document.getElementById("hiddenInput");
     input.focus(); // This triggers the virtual keyboard on mobile
   });
 }
