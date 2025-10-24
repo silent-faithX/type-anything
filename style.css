@@ -38,7 +38,7 @@ nav #name {
 
 .nav-buttons {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 nav button {
@@ -50,14 +50,6 @@ nav button {
     background-color: #748f14da;
     font-family: 'Gilroy', sans-serif;
     transition: background 0.2s;
-}
-
-.nav-buttons #sbtn{
-    background-color: #1e8ec6da;
-}
-
-.nav-buttons #sbtn:hover{
-    background-color: #1773a1d2;
 }
 
 .nav-buttons #rbtn:hover {
