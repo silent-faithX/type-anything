@@ -5,7 +5,7 @@ let tmp = '';
 
 function type() {
   window.addEventListener("keydown", function (res) {
-    // Ignore modifier keys like Shift, Ctrl, Alt
+    // Ignore keys like Shift, Ctrl, Alt
     if (res.key.length > 1 && res.key !== ' ') return;
 
     if (res.key === " ") {
@@ -30,5 +30,14 @@ function reload() {
   });
 }
 
+// Virtual keyborad method on mobile
+function vkeyboard() {
+  document.body.addEventListener("click", () => {
+    const input = document.getElementById("hiddenInput");
+    input.focus(); // This triggers the virtual keyboard on mobile
+  });
+}
+
 type();
 reload();
+vkeyboard();
